@@ -1,4 +1,2 @@
-"use strict";
-console.log("hello");
-console.log("Hi vbai");
-console.log('ami ai');
+import { myInfo } from "./module-2-1.js";
+myInfo('hrid', 24);
