@@ -8,9 +8,9 @@
     // See also https://aka.ms/tsconfig/module
     "module": "esnext",
     "target": "esnext",
-    
     // Recommended Options
     "strict": true,
     "skipLibCheck": true,
+    "moduleDetection": "force"
   }
 }
