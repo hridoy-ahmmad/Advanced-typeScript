@@ -24,3 +24,8 @@ interface User {
 type currentUser = User | null;
 // const user: User = null; // Not allowed to use different branch item
 const user: currentUser = null;
+
+// Unit type
+const greetings = () => {
+  console.log("hello");
+};
