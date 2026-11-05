@@ -26,6 +26,8 @@ type currentUser = User | null;
 const user: currentUser = null;
 
 // Unit type
-const greetings = () => {
-  console.log("hello");
+const greetings = (name: string) => {
+  name; // void
+  return name; // perfect because of return
 };
+greetings("name");
