@@ -22,9 +22,16 @@ userResult(UserStatus);
 const config = {
     port: 3000,
 };
-// 3 solves 
+// 3 solves
 // const currentPort: number | undefined = config.port;
 // const currentPort: number  = config.port!;
 const currentPort = config.port;
 console.log(currentPort);
+// constant assertion
+let userInfo = {
+    name: "Hridoy",
+    age: 24,
+};
+// userInfo.name = "Huda"; Cannot assign to 'name' because it is a read-only property.
+console.log(userInfo);
 export {};
