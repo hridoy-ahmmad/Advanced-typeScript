@@ -64,5 +64,5 @@ interface myUser {
 
 const myuser: myUser = {
   userID: 122,
-  userName: "Sharif",
+  userName: "Sharif"
 };
