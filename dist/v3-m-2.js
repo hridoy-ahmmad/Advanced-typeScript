@@ -8,7 +8,17 @@ const vehicals = {
     model: "Apche RTR 150",
     registration: "raj metro 172772",
     colorCode: "#121212",
-    type: 'bike',
-    brand: "Apache"
+    type: "bike",
+    brand: "Apache",
+};
+const dog = {
+    name: "Tommy",
+    age: 5,
+    gender: "Male",
+    species: " Canis familiaris",
+};
+const myuser = {
+    userID: 122,
+    userName: "Sharif"
 };
 export {};
