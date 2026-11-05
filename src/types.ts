@@ -15,3 +15,12 @@ let sumthing: unknown;
 const num: number = 1234;
 
 sumthing = num;
+
+// Nulish Type
+
+interface User {
+  name: string;
+}
+type currentUser = User | null;
+// const user: User = null; // Not allowed to use different branch item
+const user: currentUser = null;
