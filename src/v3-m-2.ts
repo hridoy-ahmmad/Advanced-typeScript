@@ -32,6 +32,24 @@ const vehicals: Bike = {
   model: "Apche RTR 150",
   registration: "raj metro 172772",
   colorCode: "#121212",
-  type:'bike',
-  brand:"Apache"
+  type: "bike",
+  brand: "Apache",
+};
+
+// type intersection
+
+type Pets = {
+  species: string;
+};
+type Dog = Pets & {
+  name: string;
+  age: number;
+  gender: "Male" | "Female";
+};
+
+const dog: Dog = {
+  name: "Tommy",
+  age: 5,
+  gender: "Male",
+  species: " Canis familiaris",
 };
