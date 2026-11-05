@@ -53,3 +53,16 @@ const dog: Dog = {
   gender: "Male",
   species: " Canis familiaris",
 };
+// If two or more interfaces have the same name, TypeScript automatically merges them into a single interface. This is known as Declaration Merging.
+
+interface myUser {
+  userName: string;
+}
+interface myUser {
+  userID: number;
+}
+
+const myuser: myUser = {
+  userID: 122,
+  userName: "Sharif",
+};
