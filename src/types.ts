@@ -31,3 +31,4 @@ const greetings = (name: string) => {
   return name; // perfect because of return
 };
 greetings("name");
+
