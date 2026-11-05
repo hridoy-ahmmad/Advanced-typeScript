@@ -16,3 +16,22 @@ const user: User = {
   id: 123,
   role: "admin",
 };
+
+//interface extends
+interface Vehicals {
+  type: string;
+  brand: string;
+}
+interface Bike extends Vehicals {
+  model: string;
+  registration: string | number;
+  colorCode: string | number;
+}
+
+const vehicals: Bike = {
+  model: "Apche RTR 150",
+  registration: "raj metro 172772",
+  colorCode: "#121212",
+  type:'bike',
+  brand:"Apache"
+};
