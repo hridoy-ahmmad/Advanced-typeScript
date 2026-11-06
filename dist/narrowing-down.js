@@ -51,4 +51,11 @@ const res2 = (x) => {
 res2(null);
 res2("Hello World");
 res2(["Hello", "World", "TypeScript"]);
+const res3 = (x) => {
+    if ("fly" in x) {
+        x.fly();
+        return;
+    }
+    x.swim();
+};
 export {};

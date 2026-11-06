@@ -42,7 +42,7 @@ const res2 = (x: string | string[] | null) => {
       console.log(x, "is a string");
       return;
     } else {
-      console.log(x ," is an object");
+      console.log(x, " is an object");
       return;
     }
   }
@@ -51,3 +51,20 @@ const res2 = (x: string | string[] | null) => {
 res2(null);
 res2("Hello World");
 res2(["Hello", "World", "TypeScript"]);
+
+// in operator
+
+interface bird {
+  fly: () => void;
+}
+interface fish {
+  swim: () => void;
+}
+
+const res3 = (x: bird | fish) => {
+  if ("fly" in x) {
+    x.fly();
+    return;
+  }
+  x.swim();
+};
