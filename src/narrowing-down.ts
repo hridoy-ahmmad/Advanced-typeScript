@@ -91,5 +91,6 @@ const res4 = (animal: Dog | Cat | Elephant) => {
     console.log(animal.age);
     return;
   }
+  
   console.log(animal.age);
 };
