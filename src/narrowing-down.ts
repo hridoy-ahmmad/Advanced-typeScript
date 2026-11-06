@@ -24,6 +24,30 @@ const print = (x: string | string[] | null) => {
   }
   console.log("No value");
 };
-print(["Hello", "World", "TypeScript"]);
-print("Hello World");
-print(null);
+// print(["Hello", "World", "TypeScript"]);
+// print("Hello World");
+// print(null);
+
+// equality
+const res = (x: number | string, y: number | boolean) => {
+  if (x === y) {
+    // console.log(x);
+    // console.log(y);
+  }
+};
+
+const res2 = (x: string | string[] | null) => {
+  if (x !== null) {
+    if (typeof x === "string") {
+      console.log(x, "is a string");
+      return;
+    } else {
+      console.log(x ," is an object");
+      return;
+    }
+  }
+  console.log("value is null");
+};
+res2(null);
+res2("Hello World");
+res2(["Hello", "World", "TypeScript"]);
