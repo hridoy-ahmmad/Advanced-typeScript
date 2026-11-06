@@ -6,19 +6,24 @@ const value = (value: string | number) => {
   } else if (typeof value === "number") {
     return value;
   } else {
-    return value;  // value never type 
+    return value; // value never type
   }
 };
 
 // caveat of type guard
 const print = (x: string | string[] | null) => {
   if (x && typeof x === "object") {
+    // check x is a truthy value , because null is also an object
     for (let str of x) {
       console.log(str);
     }
+    return;
   } else if (typeof x === "string") {
     console.log(x);
+    return;
   }
-  console.log("");
+  console.log("No value");
 };
-print("ggg");
+print(["Hello", "World", "TypeScript"]);
+print("Hello World");
+print(null);
