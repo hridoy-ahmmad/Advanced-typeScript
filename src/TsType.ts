@@ -28,7 +28,7 @@ type userStatus = "pending" | "approved" | "rejected";
 const UserStatus: string = "rejected";
 
 const userResult = (UserStatus: userStatus) => {
-  console.log(UserStatus);
+  // console.log(UserStatus);
 };
 
 userResult(UserStatus as userStatus);
@@ -46,7 +46,7 @@ const config: Config = {
 // const currentPort: number | undefined = config.port;
 // const currentPort: number  = config.port!;
 const currentPort: number = config.port as number;
-console.log(currentPort);
+// console.log(currentPort);
 
 // constant assertion
 
@@ -55,4 +55,4 @@ let userInfo = {
   age: 24,
 } as const;
 // userInfo.name = "Huda"; Cannot assign to 'name' because it is a read-only property.
-console.log(userInfo);
+// console.log(userInfo);

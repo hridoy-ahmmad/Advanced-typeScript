@@ -7,7 +7,7 @@ const user = {
 };
 const userResult = (user) => {
     if (user && user.adress) {
-        console.log(user.adress.street);
+        // console.log(user.adress.street);
     }
     else {
         throw new Error("User Not Found");

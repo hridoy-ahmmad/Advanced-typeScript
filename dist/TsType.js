@@ -16,7 +16,7 @@ let status = "pending";
 let name = "babul"; // in one line
 const UserStatus = "rejected";
 const userResult = (UserStatus) => {
-    console.log(UserStatus);
+    // console.log(UserStatus);
 };
 userResult(UserStatus);
 const config = {
@@ -26,12 +26,12 @@ const config = {
 // const currentPort: number | undefined = config.port;
 // const currentPort: number  = config.port!;
 const currentPort = config.port;
-console.log(currentPort);
+// console.log(currentPort);
 // constant assertion
 let userInfo = {
     name: "Hridoy",
     age: 24,
 };
-// userInfo.name = "Huda"; Cannot assign to 'name' because it is a read-only property.
-console.log(userInfo);
 export {};
+// userInfo.name = "Huda"; Cannot assign to 'name' because it is a read-only property.
+// console.log(userInfo);
