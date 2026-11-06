@@ -68,3 +68,28 @@ const res3 = (x: bird | fish) => {
   }
   x.swim();
 };
+
+// discriminated Union
+
+interface Dog {
+  name: "Tom";
+  age: 5;
+}
+interface Cat {
+  name: "Tommy";
+  age: 1;
+}
+interface Elephant {
+  name: "Hamda";
+  age: 12;
+}
+const res4 = (animal: Dog | Cat | Elephant) => {
+  if (animal.name === "Tom") {
+    console.log(animal.age);
+    return;
+  } else if (animal.name === "Tommy") {
+    console.log(animal.age);
+    return;
+  }
+  console.log(animal.age);
+};

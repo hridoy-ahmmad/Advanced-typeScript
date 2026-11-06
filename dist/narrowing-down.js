@@ -58,4 +58,15 @@ const res3 = (x) => {
     }
     x.swim();
 };
+const res4 = (animal) => {
+    if (animal.name === "Tom") {
+        console.log(animal.age);
+        return;
+    }
+    else if (animal.name === "Tommy") {
+        console.log(animal.age);
+        return;
+    }
+    console.log(animal.age);
+};
 export {};
